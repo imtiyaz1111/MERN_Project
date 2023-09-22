@@ -1,0 +1,26 @@
+.container{
+    box-shadow: 0 0 15px -10px #2d3748;
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+}
+.progile-img img{
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    height: 250px;
+    border-radius: 300px;
+}
+.profile-edit-btn{
+    cursor: pointer;
+}
+.about-info p{
+    color: #007bff;
+}
+.profile-work{
+    padding: 10px 10px;
+}
+.profile-work p{
+    font-weight: 600;
+}
+.profile-tab label{
+    font-weight: 600;
+}
