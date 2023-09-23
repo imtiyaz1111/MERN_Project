@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Contac = () => {
     const [contact,setContact]=useState({
         name:"",
@@ -20,7 +21,7 @@ const Contac = () => {
 const sendData= async(e)=>{
     e.preventDefault()
     const {name,email,phone,message}=contact;
-    const  res  =await fetch("http://localhost:8000/contact",{
+    const  res  =await fetch("/contact",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

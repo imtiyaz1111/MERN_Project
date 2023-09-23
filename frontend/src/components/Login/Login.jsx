@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Login = () => {
   const  navigate=useNavigate()
   const[email,setEmail]=useState("")
@@ -10,7 +11,7 @@ const Login = () => {
 
   const userLogin=async (e)=>{
     e.preventDefault()
-    const res=await fetch("http://localhost:8000/login",{
+    const res=await fetch("/login",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

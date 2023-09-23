@@ -1,12 +1,13 @@
 import React,{useEffect,useState} from 'react';
 import "./Home.css"
 
+
 const Home = () => {
   const [userName,setUserName]=useState('');
   const [show ,setShow]=useState(false)
   const userHomePage=async()=>{
     try {
-      const res=await fetch("http://localhost:8000/getdata",{
+      const res=await fetch("/getdata",{
         method:"GET",
         headers:{
           "Content-Type":"application/json"

@@ -7,7 +7,7 @@ const About = () => {
   const  navigate=useNavigate()
   const callAboutPage=async()=>{
     try {
-      const res=await fetch("http://localhost:8000/about",{
+      const res=await fetch("/about",{
         method:"GET",
         headers:{
           Accept:"application/json",
