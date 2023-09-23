@@ -11,7 +11,7 @@ const Login = () => {
 
   const userLogin=async (e)=>{
     e.preventDefault()
-    const res=await fetch("/login",{
+    const res=await fetch("https://mern-project-bice.vercel.app/login",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
