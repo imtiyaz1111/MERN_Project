@@ -21,7 +21,7 @@ const Contac = () => {
 const sendData= async(e)=>{
     e.preventDefault()
     const {name,email,phone,message}=contact;
-    const  res  =await fetch("/contact",{
+    const  res  =await fetch("https://mern-project-bice.vercel.app/contact",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
