@@ -26,7 +26,7 @@ const Register = () => {
   const postData= async(e)=>{
     e.preventDefault()
     const {name,email,phone,work,password,cpassword}=user;
-    const  res  =await fetch("/register",{
+    const  res  =await fetch("https://mern-project-bice.vercel.app/register",{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
