@@ -7,7 +7,7 @@ const Home = () => {
   const [show ,setShow]=useState(false)
   const userHomePage=async()=>{
     try {
-      const res=await fetch("/getdata",{
+      const res=await fetch("https://mern-project-bice.vercel.app/getdata",{
         method:"GET",
         headers:{
           "Content-Type":"application/json"
